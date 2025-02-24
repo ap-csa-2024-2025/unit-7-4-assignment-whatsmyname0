@@ -31,6 +31,18 @@ public class Main
    */
   public static int searchSecond(final ArrayList<String> arr, String target)
   {
+    int count = 0;
+    for (int i = 0; i <arr.size(); i++)
+    {
+      if (arr.get(i).equals(target))
+      {
+        count++;
+      }
+      if (count == 2)
+      {
+        return i;
+      }
+    }
     return -1;
   }
 }
